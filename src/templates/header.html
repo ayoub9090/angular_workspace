@@ -1,0 +1,136 @@
+	
+        <!--header-->
+        <div class="header">
+            <div class="container-fluid">
+               				
+						<nav class="navbar navbar-default main-header">
+						  <div class="container-fluid">
+						  <div class="row-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header pull-left">  
+							  <a class="navbar-brand" href="#">workspaces</a>
+							</div>
+						
+							<!-- userInfo -->
+							<div class="pull-right user-information">
+								<a href="{{profileURL}}" title="{{userName}}">
+									<span>{{userName}}</span> 
+									<img class="avatar-circle" src="./assets/theme/images/{{profilePictureSrc}}" alt="" title="" />
+								</a>
+							</div>
+							<!-- /.userInfo -->
+							<!-- Mobile expand --->
+
+								<div type="button" class="visible-xs" id="nav-icon4" data-toggle="collapse" data-target="#menuNav" aria-expanded="false">
+								  <span></span>
+								  <span></span>
+								  <span></span>
+								</div>							  
+							<!-- ./Mobile expand -->
+							
+							<!-- Desktop Searh form -->
+							<form id="custom-search-input" class="col-md-2 col-lg-2 col-sm-3 hidden-xs">
+								<div class="input-group">
+							
+									<span class="input-group-btn input-group-btn-search">
+										<button class="btn btn-info btn-md" type="submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</span>
+									<input type="text" title="Search..." required class="form-control input-md input-search-custom" placeholder="Search..." />
+								</div>
+							</form>
+							<!-- /.Desktop searchform -->
+							
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse col-md-6 col-sm-6 col-xs-12 pull-right" id="menuNav">
+
+							<!-- Mobile Searh form -->
+							<form id="custom-search-input" class="col-md-2 col-lg-2 col-sm-3 visible-xs">
+								<div class="input-group">
+							
+									<span class="input-group-btn input-group-btn-search">
+										<button class="btn btn-info btn-md" type="submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</span>
+									<input type="text" title="Search..." required class="form-control input-md input-search-custom" placeholder="Search..." />
+								</div>
+							</form>
+							<!-- /.Mobile searchform -->
+							
+							  <ul class="nav navbar-nav navbar-right">
+								<li class="active talk">
+									<a href="#" title="Talk">
+										<span><img src="./assets/theme/images/icons/talk.png" /></span>
+										<span>Talk</span>
+									</a>
+								</li>
+								<li>
+									<a class="calender" href="#" title="Calender">
+										<span><img src="./assets/theme/images/icons/calender.svg" /></span>
+										<span>Calender</span>
+									</a>
+								</li>
+								<li>
+									<a class="settings" href="#" title="Settings">
+										<span><img src="./assets/theme/images/icons/settings.svg" /></span>
+										<span>Settings</span>
+									</a>
+								</li>
+								<li>
+									<a class="reports" href="#" title="Reports">
+										<span><img src="./assets/theme/images/icons/reports.svg" /></span>
+										<span>Reports</span>
+									</a>
+								</li>
+								<li>
+									<a class="boards" href="#" title="Boards">
+										<span><img src="./assets/theme/images/icons/boards.svg" /></span>
+										<span>Boards</span>
+									</a>
+								</li>
+								<li>
+									<a class="notifications" href="#" title="Notifications">
+										<span>
+											<span class="notification-circle"></span>
+											<img src="./assets/theme/images/icons/notification.png" />
+										</span>
+										<span>Notifications</span>
+										
+									</a>
+								</li>
+								
+							  </ul>
+							  
+							</div><!-- /.navbar-collapse -->
+							</div>
+						  </div><!-- /.container-fluid -->
+						</nav>
+					
+			
+            </div>
+        </div>
+        <!--End-header-->
+
+		
+		
+	   		<!-- Boards Container-->
+ <div class="container-fluid">
+    <div class="inline-row">
+		<div class="col-sm-6">
+			<label class="boards-overview-title">Boards Overview
+				<a class="dropdown-circle" href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+			</label>
+		</div>
+		<ul class="col-sm-6 text-right users-lists-row">
+			<li><a href="#" class="circle-add">+</a></li>
+			<li><a href="#"><img class="avatar-circle" src="./assets/theme/images/avatar-default.png" alt="" title=""></a></li>
+		
+			<li *ngFor="let u of users">
+			<a href="{{u.profileURL}}" ><img title="{{u.UserName}}" class="avatar-circle" src="./assets/theme/images/{{u.profilePictureSrc}}" alt="" title="{{u.UserName}}"></a>
+			</li>
+			
+		</ul>
+	</div>
+ </div>		

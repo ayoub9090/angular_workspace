@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>workspace</title>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap Core CSS -->
+    <link href="./assets/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/theme/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">	
+    <link href="./assets/theme/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="./assets/theme/css/style.css" rel="stylesheet">
+    <link href="./assets/theme/css/dragula.min.css" rel="stylesheet">
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('./assets/app/main.js').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+	<div class="site_Container wide">
+		<my-app></my-app>
+	</div>
+	
+	
+	<!-- jQuery -->
+	<script src="./assets/theme/js/jquery.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="./assets/theme/js/bootstrap.min.js"></script>
+	<script src="./assets/theme/js/bootstrap-select.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+  </body>
+</html>
